@@ -1,0 +1,41 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashBoardTest": "npm run test -- --record --key 33487c7f-2c49-4e03-8b73-ec168fdd8b08 --reporter mochawesome"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "Kanchan",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.2.1",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "start-server-and-test": "^1.11.7"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanchankanwar/Cypress-Automation-Basics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kanchankanwar/Cypress-Automation-Basics/issues"
+  },
+  "homepage": "https://github.com/kanchankanwar/Cypress-Automation-Basics#readme"
+}
